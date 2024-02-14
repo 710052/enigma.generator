@@ -38,3 +38,8 @@ if __name__ == "__main__":
     password = generate_random_password(12)
     print(f"Random Password: {password}")
     print(f"Password Strength Score: {check_password_strength(password)}")
+
+    # Generate a BIP39 passphrase
+    passphrase = generate_bip39_passphrase(bip39_wordlist, 12)
+    print(f"BIP39 Passphrase: {passphrase}")
+    

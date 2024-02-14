@@ -27,3 +27,5 @@ def add_external_entropy():
     # This is a placeholder. Implementations would involve capturing system or user events to seed the RNG.
     seed = int(hashlib.sha256(str(time.time()).encode()).hexdigest(), 16) % (2**32)
     random.seed(seed)
+# Placeholder for BIP39 Wordlist
+bip39_wordlist = [

@@ -33,3 +33,8 @@ bip39_wordlist = ["abandon", "ability", "able", "about", "above", "absent", "abs
 # Main Script
 if __name__ == "__main__":
     add_external_entropy()  # Enhance randomness
+
+    # Generate and check a random password
+    password = generate_random_password(12)
+    print(f"Random Password: {password}")
+    print(f"Password Strength Score: {check_password_strength(password)}")

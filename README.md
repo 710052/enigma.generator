@@ -33,3 +33,21 @@ source venv/bin/activate  # On Windows, use `venv\Scripts\activate`
 ```
 
 4. Install the required libraries:
+The script assumes the presence of certain libraries for optional features, such as external entropy collection, QR code generation, and cryptographic operations. While the core functionality (password and passphrase generation) doesn't require external libraries, here are some you might consider for extending the project:
+
+- `pynput` for capturing keyboard and mouse events for external entropy.
+- `pyperclip` for clipboard operations (note: this was conceptual and not included in the final script).
+- `qrcode` for generating QR codes of passwords/passphrases.
+- Cryptographic libraries such as `bitcoinlib` for Bitcoin mnemonic generation or equivalent libraries for Monero.
+
+```bash
+pip install pynput pyperclip qrcode bitcoinlib
+```
+## Usage
+
+Run the script from the command line:
+
+```bash
+python secure_password_generator.py
+```
+Follow the on-screen prompts to generate a password or passphrase. For additional functionalities, such as integrating with cryptographic libraries for Bitcoin and Monero mnemonic generation or implementing Shamir's Secret Sharing, you will need to extend the script with the respective libraries.

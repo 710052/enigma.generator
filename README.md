@@ -62,5 +62,3 @@ Follow the on-screen prompts to generate a password or passphrase. For additiona
 
 [MIT](https://choosealicense.com/licenses/mit/)
 ```
-
-This updated `README.md` includes a section on the libraries required for the extended functionalities of the project, along with security considerations to keep in mind when utilizing or expanding upon this project.

@@ -51,3 +51,9 @@ Run the script from the command line:
 python secure_password_generator.py
 ```
 Follow the on-screen prompts to generate a password or passphrase. For additional functionalities, such as integrating with cryptographic libraries for Bitcoin and Monero mnemonic generation or implementing Shamir's Secret Sharing, you will need to extend the script with the respective libraries.
+
+## Security Considerations
+
+- **External Entropy**: The conceptual implementation for external entropy is a placeholder. Actual deployment should ensure robust collection mechanisms that do not compromise user security.
+- **Cryptographic Use**: For generating mnemonics for cryptocurrencies or implementing secret sharing schemes, ensure you use well-reviewed libraries and follow best practices in cryptographic security.
+- **Data Storage**: If implementing export functionalities for storing passwords or passphrases, use secure storage practices, potentially including encryption.

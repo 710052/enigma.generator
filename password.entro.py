@@ -13,4 +13,14 @@ def generate_random_password(length=12):
 def generate_bip39_passphrase(word_list, num_words=12):
     """Generate a random passphrase using the BIP39 wordlist."""
     return ' '.join(random.choice(word_list) for _ in range(num_words))
-    
+
+# Basic Password Strength Checker
+def check_password_strength(password):
+    """Simple password strength checker."""
+    length = len(password)
+    has_upper = any(c.isupper() for c in password)
+    has_lower = any(c.islower() for c in password)
+    has_digit = any(c.isdigit() for c in password)
+    has_special = any(c in string.punctuation for c in password)
+    score = length + has_upper + has_lower + has_digit + has_special
+    return score

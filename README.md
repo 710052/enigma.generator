@@ -57,3 +57,10 @@ Follow the on-screen prompts to generate a password or passphrase. For additiona
 - **External Entropy**: The conceptual implementation for external entropy is a placeholder. Actual deployment should ensure robust collection mechanisms that do not compromise user security.
 - **Cryptographic Use**: For generating mnemonics for cryptocurrencies or implementing secret sharing schemes, ensure you use well-reviewed libraries and follow best practices in cryptographic security.
 - **Data Storage**: If implementing export functionalities for storing passwords or passphrases, use secure storage practices, potentially including encryption.
+
+## License
+
+[MIT](https://choosealicense.com/licenses/mit/)
+```
+
+This updated `README.md` includes a section on the libraries required for the extended functionalities of the project, along with security considerations to keep in mind when utilizing or expanding upon this project.
